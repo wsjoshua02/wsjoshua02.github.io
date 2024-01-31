@@ -16,28 +16,91 @@
 <body>
     <div class = "text-box">
         <p style="text-align:center;"><font size ="+3">About Me</font></strong></p>
-        <!--<img class="center" src="elbow_freeze.jpg" width="300" height="500" alt="">-->
-        <img class="center" src="IMG_20230603_175953263_HDR.jpg"  width = 250 height="350" alt="">
+        <img class = "center" src="IMG_20230603_175953263_HDR.jpg" width = 250 height="350" alt="" >
+      
+
+
         <p style="text-align:center;">Howdy! My name is Joshua Yan.</strong></p>
         <p style="text-align:center;">I’m a senior at Texas A&M University, planning on graduating in Spring of 2024 with a B.S. in Computer Engineering.</p>
         <p style="text-align:center;">I have a strong background in STEM via school coursework in fields such as mathematics, computer science, and electrical engineering, as well as through my Summer 2023 internship at Hewlett Packard Enterprise, where I learned to apply my skills and how to work in a high level professional environment.</p>
         <p style="text-align:center;">Outside of school and work:</p>
-        <ol class="center">
-            <li>I've been to 14 countries, and enjoy traveling and experiencing the world.</li>
-            <img  class="center" width="600" height="250" src="collage.png"  alt="">
-            <br>
-            <li>I like to dance! I'm the president of FUSD, a street dance club at Texas A&M. We host community dance events such as workshops and dance battles, perform for various audiences, and travel to compete at events around Texas. Check out one of my highlight reels below!</li>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img   class="center" width="600" height="250" src="collage.png">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
             <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/I4QZYWN-ZCM?si=-yyH2rvnCxrLbF4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img   class="center" src="mavs.jpg"  width = 350 height="300" src="mavs.jpg">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img   class="center" src="trooper.jpg"  width = 250 height="320" src="trooper.jpg">
+          </div>
+
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+        <ol class="center">
+            <li>I've been to 14 countries, and enjoy traveling and experiencing the world. Some snippets from those travels are shown above.</li>
             <br>
-            <li>I'm a fan of the Dallas Mavericks, and I've been to many games; witnessing a Dirk Nowitzki game winner in person was a core memory of mine.</li>
-            <img  class="center" src="mavs.jpg"  width = 350 height="300" alt="">
+            <li>I like to dance! I'm the president of FUSD, a street dance club at Texas A&M. We host community dance events such as workshops and dance battles, perform for various audiences, and travel to compete at events around Texas. Check out one of my highlight reels above!</li>
             <br>
-            <li>I have a Shiba-Inu Chihuaha mix named Trooper. He is a very good boy.</li>
-            <img  class="center" src="trooper.jpg"  width = 250 height="320" alt="">
+            <li>I'm a fan of the Dallas Mavericks, and I've been to many games; witnessing a Dirk Nowitzki game winner in person was a core memory of mine. Shown above is a view from when I got to go to a conference finals game!</li>
+            <br>
+            <li>I have a Shiba-Inu Chihuaha mix named Trooper. He is a very good boy and also a bit of a diva at times.</li>
             <br>
             <li>I love trying new foods and also do my best to hone my own cooking skills in the kitchen.</li>
         </ol>
-        <p style="text-align:center;">Learn more about me on the other 3 pages!</strong></p>
+        <p style="text-align:center;">Learn more about me on the other pages!</strong></p>
         <!--<p style="text-align:center;">Contact me at wsjoshua02@gmail.com, and feel free to check out <a href="https://www.linkedin.com/in/joshua-yan-730518185/"><u>what I've done</u></a>, <a href="https://www.instagram.com/jyanyanyanyan/"><u>what I'm up to</u></a>, and even <a href="https://open.spotify.com/user/226jh26nldlxwhbi7u5m3anaq?si=098dc89b5a6b4322"><u>what I listen and jam out to</u></a>!</p>-->
 </body>
 </html>
