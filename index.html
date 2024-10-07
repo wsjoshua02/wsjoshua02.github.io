@@ -7,7 +7,7 @@
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+        <a href="#qualifications" class="w3-bar-item w3-button">Qualifications</a>
         <a href="#projects" class="w3-bar-item w3-button">Projects</a>
         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
       </div>
@@ -21,49 +21,100 @@
     <img src="Personal Collage.png" alt="Collage" class="center" style="width:75%; margin:0 auto;">
   </div>
   <div class="w3-container w3-padding-32" id="about" style="width:80%; margin:0 auto;">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>About</strong></h3>
     <p>Hi! My name is Josh Yan, and I'm an engineer based in the DFW Area.
-      I'm an ASIC Design Verification Engineer at HPE, and a 2024 Computer Engineering graduate 
-      of Texas A&M University. My experience includes Design Verification for ASIC development 
-      in my previous summer internship using SystemVerilog and UVM, as well as coursework in 
-      C++, Verilog, circuit design and implementation, and mathematics from calculus to linear algebra.
+      I'm a VLSI Design Verification Engineer at HPE, and a 2024 graduate 
+      of Texas A&M University with a B.S. in Computer Engineering. My experience includes 
+      Design Verification for ASIC development using SystemVerilog and UVM, as well as 
+      coursework in many other engineering disciplines, including object orient programming, 
+      Verilog, circuit design and implementation, software and embedded systems projects,
+      and mathematics from calculus to linear algebra.
     </p>
     <p>Outside of work:</p>
     <ol class="center">
-      <li>I've been to 14 countries, and enjoy traveling and experiencing the world.</li>
+      <li>I've been to 14 countries, and enjoy traveling and experiencing the world.
+      </li>
       <br>
-      <li>I like to dance! I was the president of a freestyle street dance club at my time at A&M. Nowadays I enjoy practicing
+      <li>I like to dance! To me, dancing gives me a way to express myself, stay active, and be a part of a community.
+        I was the president of a freestyle street dance club at my time at A&M. Nowadays I enjoy practicing
         and honing my skills, and even occasionally compete in battles and events. Just don't ask me about Raygun!</li>
       <br>
       <li>I'm a fan of the Dallas Mavericks, and I've been to many games; witnessing a Dirk Nowitzki game winner in person was a core memory of mine.</li>
       <br>
       <li>I have a Shiba-Inu Chihuaha mix named Trooper. He's a good boy but very needy sometimes.</li>
   </ol>
-  <p>See some snippets of my life here!</p>
-  <br>
+  <p>See some snippets of my life here below!</p>
+  <style>
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+    /* Position the "next button" to the right */
+  .prev{
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+    /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  </style>
    <!-- Slideshow container -->
    <div class="slideshow-container"style="text-align:center">
 
     <div class="mySlides fade">
       <div class="numbertext"></div>
-      <img class="center" width="600" height="350" src="new collage.JPG">
+      <img class="center" width="700" height="450" src="new collage.png">
+      <p><em>Memories of my travels, from Europe, Asia, and the great American outdoors.</em></p>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext"></div>
-      <video width="350" height="350" controls>
+      <video width="450" height="450" controls>
         <source src="dance stuff (1).mp4" type="video/mp4">
       </video>
+      <p><em>Some shots and clips of me getting down at local dance events.</em></p>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext"></div>
-      <img   class="center" src="mavs.jpg"  width = 350 height="300" src="mavs.jpg">
+      <img   class="center" src="mavs.jpg"  width = 450 height="400" src="mavs.jpg">
+      <p><em>My view from when I got to go to my first Conference Finals game.</em></p>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext"></div>
-      <img   class="center" src="trooper.jpg"  width = 250 height="320" src="trooper.jpg">
+      <img   class="center" src="trooper.jpg"  width = 350 height="420" src="trooper.jpg">
+      <p><em>My dog Trooper, during the golden hour.</em></p>
     </div>
 
 
@@ -108,36 +159,59 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
-    </script>
+  </script>
 
   </div>
 
-  <div class="w3-container w3-padding-32" id="resume" style="width:80%; margin:0 auto;">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Resume</h3>
+  <div class="w3-container w3-padding-32" id="qualifications" style="width:80%; margin:0 auto;">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Qualifications</strong></h3>
+    
     <div class="text-box">
+      <p style>Through my past experiences, such as my education and my internship, I've gained knowledge and skills that I use to further grow my personal and professional life. 
+        An abridged version of my resume is available as well!</p>
+      <embed class="pdf" src="JoshuaYan2024Resume.pdf" width="80%" height="500">
+      <p style><strong>Skills</strong></p> 
+      <ul>
+        <li>Technical Skills</li>
+        <ul>
+            <li>Design Verification using SystemVerilog, Verdi, UVM, and Eclipse.</li>
+            <li>Basic Object Oriented Programming (in languages such as Java, C++, and Python) for various applications, including networking and machine learning.</li>
+            <li>Coursework/Project experience in software engineering and development.</li>
+            <li>Coursework/Project experience in embedded systems design and development.</li>
+            <li>Coursework/Project experience in database design and management using SQL and PHP.</li>
+            <li>Extensive coursework in mathematics, such as Calculus, Differential Equations, and Linear Algebra.</li>
+        </ul>
+        <li>Interpersonal Skills</li>
+        <ul>
+            <li>Professional communications and teamwork.</li>
+            <li>Project management via the Agile Development Methodology.</li>
+            <li>Experience in consumer-facing roles and customer service.</li>
+            <li>Experience with event planning/management.</li>
+        </ul>
+    </ul> 
       <p style><strong>Experience</strong></p>
       <ul>
-          <li>VLSI Design Verification Engineer at Hewlett Packard Enterprise</li>
+          <li>VLSI Design Verification Engineer at Hewlett Packard Enterprise (2024-Present)</li>
           <ul>
               <li>Doing cool things at HPE : )</li>
-              <li>Part of the HPC (High Performance Computing) and Cray Team at HPE</li>
-              <li>Focused on the Packet and Connection Tracking block on the Cassini-3 network interface controller (NIC) chip for the Slingshot-3 network</li>
+              <li>Part of the HPC (High Performance Computing) and Cray Team at HPE.</li>
+              <li>Focused on the Packet and Connection Tracking block on the Cassini-3 network interface controller (NIC) chip for the Slingshot-3 network.</li>
+              <li>Utilizing tools like DVT Eclipse, Perforce, and Verdi to develop, debug, and verify SystemVerilog code and ensure compliance with the code base and versions.</li>
           </ul>
           <li>Design Verification Intern at Hewlett Packard Enterprise (Summer 2023)</li>
           <ul>
-              <li>Worked on transaction translating between different interfaces of a Network Interface Controller, as well as handling retrying data requests in case of failures</li>
-              <li>Wrote, debugged and simulated a sequence function in SystemVerilog generating and randomizing incoming data requests and translating them into request headers to be passed on between different interfaces of the ASIC</li>
-              <li>Used my generation functions in a separate sequence to drive stimulus to the DUT by generating requests</li>
-              <li>Learned and utilized tools such as Linux, UVM, SystemVerilog, Functional Coverage, Verdi, and Perforce</li>
+              <li>Worked on transaction translating between different interfaces of a Network Interface Controller, as well as handling retrying data requests in case of failures.</li>
+              <li>Wrote, debugged and simulated a sequence function in SystemVerilog generating and randomizing incoming data requests and translating them into request headers to be passed on between different interfaces of the ASIC.</li>
+              <li>Used my generation functions in a separate sequence to drive stimulus to the DUT by generating requests.</li>
+              <li>Learned and utilized tools such as Linux, UVM, SystemVerilog, Functional Coverage, Verdi, and Perforce.</li>
           </ul>
           <li>Retail Sales Associate at Nike (Summer 2021 & 2022)
               <ul>
-                  <li>Assisted customers in the various store departments, mainly footwear</li>
-                  <li>Performed transactions and routinely exceeded company goals in online seamless orders</li>
-                  <li>Promoted the Nike App and the Nike Membership</li>
-                  <li>Kept the store clean and organized</li>
-                  <li>Helped process and sort merchandise</li>
-                  <li>Worked together with other team members to serve customers and help the store run smoothly</li>
+                  <li>Assisted customers in the various store departments, mainly footwear.</li>
+                  <li>Performed transactions and routinely exceeded company goals in securing online seamless orders.</li>
+                  <li>Promoted the Nike App and the Nike Membership.</li>
+                  <li>Helped process and sort merchandise in the front and back of house.</li>
+                  <li>Worked together with other team members to serve customers and help the store run smoothly.</li>
               </ul>
           </li>
       </ul>
@@ -145,7 +219,8 @@
       <ul>
           <li>Texas A&M University (2020-2024)
               <ul>
-                  <li>B.S. Computer Engineering</li>
+                  <li>Received a Bachelor of Science in Computer Engineering.</li>
+                  <li>College Sponsored National Merit Scholarship Recipient.</li>
                   <li>Relevant Courses: Calculus 1-3, Differential Equations, Linear Algebra, 
                     ENGR 102 (Python Coding Lab),  CSCE 120 (C++ Program Design and Concepts) ,
                     PHYS 207 (Physics - Electricity and Magnetism), ECEN 248 (Digital System Design), 
@@ -165,11 +240,11 @@
           <ul>
               <li><a href="https://linktr.ee/TAMUFUSD"><p><u>Check us out here!</u></p></a></li>
               <li>We promote fun as well as education about the Hip Hop dance culture in the Bryan/College Station area through various disciplines of freestyle dance, mainly breakdancing, while improving members of the organization through events such as competitions, performances, social events, and workshops.</li>
-              <li>Led other officers in planning various events, such as fundraisers, workshops, performances, and dance competitions; work included budget allocation, paperwork and documentation, contacting outside talent, working with school offices and other organizations, people management, and promotion via social media</li>
-              <li>Performed for various city, school, and student events around the Bryan/College Station area, such as TAMU’s Orientation Week, TAMU’s School of Arts and Sciences, and the City of Bryan’s First Friday Street Fair</li>
+              <li>Led other officers in planning various events, such as fundraisers, workshops, performances, and dance competitions; work included budget allocation, paperwork and documentation, contacting outside talent, working with school offices and other organizations, people management, and promotion via social media.</li>
+              <li>Performed for various city, school, and student events around the Bryan/College Station area, such as TAMU’s Orientation Week, TAMU’s School of Arts and Sciences, and the City of Bryan’s First Friday Street Fair.</li>
               <li>Organized multiple dance events and workshops for our members, other TAMU students and organizations, and the Texas freestyle dance community, helping build and connect the dance community locally and across the state.</li>
-              <li>Secured thousands of dollars in school funding for the organization via grants and volunteer fundraising opportunities</li>
-              <li>Guided and led our members throughout the school year, providing safe spaces and opportunities for them to learn and grow their skills</li>
+              <li>Secured thousands of dollars in school funding for the organization via grants and volunteer fundraising opportunities.</li>
+              <li>Guided and led our members throughout the school year, providing safe spaces and opportunities for them to learn and grow their skills.</li>
           </ul>
       </ul>
 
@@ -177,17 +252,19 @@
   </div>
 
   <div class="w3-container w3-padding-32" id="projects" style="width:80%; margin:0 auto;">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Projects</strong></h3>
     <p>Here are a few projects I've worked on over the years.</p>
 
     <p><strong>Smart Kitchen Scale</strong></p>
     <figure  style="text-align:center;">
-        <img  src="IMG_0290.webp"  width = 250 height="250" alt="">
-        <figcaption>An image of our system hardware.</figcaption>
+        <img  src="IMG_0290.webp"  width = 350 height="350" alt="">
+        <img  src="EPS Poster.pptx.png"  width = 350 height="350" alt="">
+        <figcaption>Our system hardware and our research presentation poster.</figcaption>
     </figure>
     <ul>
         <li>Project for CSCE 483 Computer Systems Design/Senior Capstone</li>
         <li>With a team of 6, developed a Smart Kitchen Scale, capable of using machine learning and computer vision to identify food names and extract digits from a 7 segment display, and then use these labels to return detailed nutritional information in a connected mobile app.</li>
+        <li>Worked using the Agile methodology, allowing greater transparency and accountability between team members and our instructors as well.</li>
         <li>Helped develop and test a convolutional neural network via TensorFlow and MobileNetV2 to identify 30 selected fruits and vegetables.</li>
         <li>Used OpenCV to extract numbers from a camera image and read the digits, performing image manipulation such as Gaussian blurring and greyscaling.</li>
         <li>Used GPIO to read in user input, allowing users to take pictures with the camera and capture image data.</li>
@@ -235,12 +312,13 @@
     <figure style="text-align:center;">
         <img  src="Battle Night Spring 2023 Still (1).png"  width = 300 height="300" alt="">
         <img  src="1.png"  width = 300 height="300" alt="">
-        <figcaption>Promotional posters I designed for some of the freestyle street dance competitions I organized.</figcaption>
+        <figcaption>Promotional posters I designed for some of the freestyle street dance battles I organized.</figcaption>
     </figure>
     <ul>
-        <li>With my club FUSD, I organized and hosted multiple dance events such as dance battle competitions and workshops, bringing together freestyle dancers from our club, other organizations on campus, and from the wider Texas freestyle dance community.</li>
+        <li>With my club FUSD, I organized and hosted multiple dance events such as dance battles, competitions, and workshops. These events were attended by and
+          helped bring together members of our club, students from other organizations on campus, and dancers from the wider Texas freestyle dance community.</li>
         <li>Worked with my team to discuss and decide on key logistics, such as event vision, dates, guests to invite and contact, itinerary, format, and budget.</li>
-        <li>Reached out to and negotiated with outside talent, such as judges, workshop teachers, and Djs.</li>
+        <li>Reached out to and negotiated with outside talent and prospective guests, such as judges, workshop teachers, and Djs.</li>
         <li>Designed and created promotional materials and promoted events via social media.</li>
         <li>Kept the event running smoothly by MCing, serving as a point of contact with guests, and working with all attendees to ensure a positive experience.</li>
     </ul>
